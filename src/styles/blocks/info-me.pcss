@@ -1,0 +1,76 @@
+.info-me{
+  position: relative;
+  z-index: 120;
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../images/content/bg__info-me.jpg") bottom;
+
+  &__inner{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  &__visual{
+    width: 27%;
+    @include desktop{
+      width: 35%;
+    }
+    @include laptop{
+      width: 40%;
+    }
+    @include middle{
+      width: 100%;
+    }
+  }
+  &__descriotion{
+    width: 41.6666%;
+    display: flex;
+    flex-direction: column;
+    @include laptop{
+      width: 60%;
+    }
+    @include middle{
+      width: 100%;
+    }
+  }
+  &__wysiwyg{
+    flex-grow: 1;
+  }
+  &__note{
+    height: 100px;
+    @include to(#fff,.5);
+    position: relative;
+    font-style: italic;
+    font-weight: 300;
+    color: #fff;
+    &:before{
+      position: absolute;
+      left: -50px;
+      transform: translateY(100%);
+      width: 27px;
+      height: 27px;
+      content: "*";
+      font-style: italic;
+      font-size: 48px;
+      line-height: 0;
+      @include to(red,.3);
+    }
+  }
+  &__user-img{
+    display: block;
+    margin: 0 auto 80px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__table{
+    width:100%
+  }
+}

@@ -1,0 +1,19 @@
+include mixins
+-let menu = ['Главная', 'Обо мне','Навыки','Работы','Отзывы','Связаться']
+-let soc = {insta: "instagram.com", vk: "vk.com" ,gh: "github.com"}
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Portfolio | main page
+  body.page
+    .page__wrapper
+      include sections/header-parallax
+      include sections/info-me
+      include sections/help-you
+      include sections/my-works
+      include sections/media
+      include sections/footer
+      include ./template/entery

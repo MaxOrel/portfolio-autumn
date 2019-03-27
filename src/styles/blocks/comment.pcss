@@ -1,0 +1,41 @@
+.comment{
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__text{
+    margin-right: 15px;
+    @include to(#fff,.5);
+    padding-bottom: 30px;
+    font-weight: $font_semibold;
+    line-height: 30px;
+  }
+  &__author-row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+  &__userpic{
+    width: 75px;
+  }
+  &__author-info{
+    padding-left: 15px;
+    background: #red;
+    display: flex;
+    flex-direction: column;
+
+  }
+  &__author-name{
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: $font_bold;
+  }
+  &__office{
+
+    @include to(#fff,.3);
+  }
+}

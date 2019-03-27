@@ -1,0 +1,31 @@
+.arrow{
+  z-index: 2;
+  &__scroll{
+    width: 110px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    &:hover{
+      cursor: pointer;
+      .arrow__text{
+        color: $orange;
+      }
+      .arrow__icon{
+        fill: $orange;
+      }
+    }
+  }
+  &__text{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    @include ts(color);
+  }
+
+  &__icon{
+    @include ts(fill);
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+  }
+}

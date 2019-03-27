@@ -1,0 +1,16 @@
+.table{
+  &__cell{
+    width: 50%;
+    font-weight: 600;
+    padding: 0 15px;
+    height: 30px;
+    &_name{
+      @include to(#fff,.15);
+      text-align: right;
+    }
+    &_value{
+      color: #fff;
+      text-align: left;
+    }
+  }
+}

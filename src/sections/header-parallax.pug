@@ -1,0 +1,9 @@
+section.parallax
+  .parallax__inner
+    include header
+    .parallax__animation
+      each num in [1, 2, 3, 4]
+        .parallax__layer(data-speed=`0.${num}`)
+          +image(`parallax/parallax__layer-${num}.png`, `parallax__img`, `слой параллакса - ${num}`, 'presentation')
+
+

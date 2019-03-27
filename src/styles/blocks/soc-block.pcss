@@ -1,0 +1,54 @@
+.soc-block{
+  display: flex;
+  align-items: center;
+  &__link{
+    margin-right: 40px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__icon{
+    fill: rgba(#fff, .3);
+    @include ts(fill);
+    &:hover{
+      fill: $orange
+    }
+  }
+
+  &_alt{
+    .soc-block__link{
+      margin-right: 20px;
+      border: 1px solid rgba(#fff, .3);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      position: relative;
+    }
+    .soc-block__icon{
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  &_menu{
+    display: none;
+    @include laptop {
+      display: flex;
+    }
+
+    .soc-block__icon{
+      fill: $text-color;
+      @include ts(fill);
+      &:hover{
+        fill: $orange
+      }
+    }
+  }
+
+}
